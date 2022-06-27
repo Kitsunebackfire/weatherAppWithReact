@@ -1,0 +1,14 @@
+.mainBody__container {
+    font-family: "Spartan", sans-serif;
+    border-radius: 15px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.457);
+    padding: 25px;
+    margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 784px){
+  
+}

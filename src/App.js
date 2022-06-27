@@ -1,9 +1,12 @@
 import "./App.css";
+import MainBody from "./components/MainBody";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div className="App">
-      <div>fjksdljfsk</div>
+      <Search />
+      <MainBody />
     </div>
   );
 }
