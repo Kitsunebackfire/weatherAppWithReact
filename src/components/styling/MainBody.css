@@ -6,9 +6,19 @@
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.457);
     padding: 25px;
-    margin-bottom: 15rem;
+    margin-bottom: 50%;
+    margin-top: 50%;
+}
+
+.mainBody__container h1 {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 784px){
-  
+  .mainBody__container {
+    position: absolute;
+    top: 41%;
+    margin-bottom: initial;
+    margin-top: initial;
+  }
 }
