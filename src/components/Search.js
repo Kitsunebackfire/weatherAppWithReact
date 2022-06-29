@@ -9,16 +9,16 @@ const Search = () => {
         <button className="search__button">
           <TravelExploreIcon className="search__searchIcon" />
         </button>
-        <label for="searchCity" hidden>
+        <label htmlFor="searchCity" hidden>
           Search City
         </label>
         <input
           id="searchCity"
           className="search__input"
-          placeholder="Search City"
+          placeholder="Search City (ex. Austin,Fort Worth,Boise)"
         />
       </form>
-      <div>error message</div>
+      <div className="search__error">error message</div>
     </div>
   );
 };

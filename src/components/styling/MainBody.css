@@ -4,21 +4,132 @@
     width: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.457);
+    color: white;
     padding: 25px;
     margin-bottom: 50%;
     margin-top: 50%;
+    width: 380px;
 }
 
-.mainBody__container h1 {
+.mainBody__title {
     text-decoration: underline;
+    margin-bottom: 45px;
+    font-size: 2.5rem;
+    margin-top: 15px;
 }
 
+.mainBody__weatherDescription {
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.mainBody__location {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.mainBody__detailsContainer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+  .mainBody__tempContainer {
+    position: relative;
+    border-right: 3px solid black;
+    font-family: "Comic Neue", cursive;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+    .mainBody__temp {
+      font-size: 7rem;
+      padding-right: 35px;
+    }
+
+    .mainBody__fahrenheit {
+      position: absolute;
+      top: .4rem;
+      right: 1rem;
+      font-size: 1.5rem;
+    }
+  
+  .mainBody__details {
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    padding-left: 17px;
+  }
 @media screen and (max-width: 784px){
   .mainBody__container {
     position: absolute;
-    top: 41%;
+    top: 32%;
     margin-bottom: initial;
     margin-top: initial;
+    width: fit-content;
   }
+
+  .mainBody__title {
+    text-decoration: underline;
+    margin-bottom: 25px;
+    font-size: 2.1rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .mainBody__weatherDescription {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .mainBody__location {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .mainBody__detailsContainer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+  }
+
+    .mainBody__tempContainer {
+      position: relative;
+      border-right: 3px solid black;
+      font-family: "Comic Neue", cursive;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+    }
+
+      .mainBody__temp {
+        font-size: 6rem;
+        padding-right: 35px;
+      }
+
+      .mainBody__fahrenheit {
+        position: absolute;
+        top: .4rem;
+        right: 1rem;
+        font-size: 1.5rem;
+      }
+    
+    .mainBody__details {
+      font-weight: 600;
+      display: grid;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 17px;
+      font-size: .7rem;
+    }
 }
