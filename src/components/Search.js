@@ -8,7 +8,6 @@ const Search = ({
   getWeather,
   location,
   setLocation,
-  resetInput,
 }) => {
   const handleInputChange = (e) => {
     setLocation(e.target.value);

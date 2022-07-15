@@ -21,9 +21,10 @@ function App() {
       const jsonData = await retreivedData.json();
       console.log(jsonData);
       //return jsonData;
-      if (jsonData.message) {
+      if (jsonData.cod !== 200) {
         setErrorMessage("Please enter a valid City");
         setLocation("");
+        console.log("404 error");
         resetInput();
       } else {
         setWeatherData(jsonData);

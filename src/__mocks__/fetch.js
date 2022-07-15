@@ -42,7 +42,3 @@ const mockResponse = {
   name: "Dallas",
   cod: 200,
 };
-
-export default {
-  get: jest.fn().mockResolvedValue(mockResponse),
-};
