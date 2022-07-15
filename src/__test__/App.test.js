@@ -56,7 +56,7 @@ const response = rest.get(url, (req, res, ctx) => {
 });
 
 const responseFailed = rest.get("*", (req, res, ctx) => {
-  console.error("error 404 occured");
+  //console.error("error 404 occured");
   return res(
     ctx.status(404),
     ctx.json({

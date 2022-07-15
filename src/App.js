@@ -19,7 +19,7 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=1e7c32808ec4dc6f51ae92399c20c43b`
       );
       const jsonData = await retreivedData.json();
-      console.log(jsonData);
+      //console.log(jsonData);
       //return jsonData;
       if (jsonData.cod !== 200) {
         setErrorMessage("Please enter a valid City");
