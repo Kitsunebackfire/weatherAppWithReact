@@ -19,7 +19,6 @@ const Search = ({
     e.preventDefault();
     if (location !== "") {
       getWeather(location);
-      setLocation("");
     } else {
       setErrorMessage("Please enter a Location");
     }

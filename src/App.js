@@ -29,6 +29,7 @@ function App() {
         setWeatherData(jsonData);
         setErrorMessage("");
         resetInput();
+        setLocation("");
       }
     } catch (error) {
       console.log(
