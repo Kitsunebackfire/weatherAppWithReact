@@ -16,7 +16,14 @@
     align-items: center;
 }
 
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 .search__error {
+  display: none;
+  animation: fadeIn 1000ms;
   text-align: center;
   font-size: 1.3rem;
   margin-top: 5px;

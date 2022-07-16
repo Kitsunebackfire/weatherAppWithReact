@@ -8,6 +8,9 @@ function App() {
   const [location, setLocation] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
+
+  const errorDiv = document.querySelector(".search__error");
+
   const resetInput = () => {
     const inputField = document.getElementById("searchCity");
     inputField.value = "";
@@ -22,6 +25,7 @@ function App() {
       //console.log(jsonData);
       //return jsonData;
       if (jsonData.cod !== 200) {
+        errorDiv.style.display = "inline";
         setErrorMessage("Please enter a valid City");
         setLocation("");
         console.log("404 error");
