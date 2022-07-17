@@ -13,7 +13,7 @@ const Footer = () => {
             className="footer__navLink"
             href="https://github.com/Kitsunebackfire/weatherAppWithReact"
           >
-            github
+            Github
           </a>
         </div>
         <div className="footer__navLinkContainer">
