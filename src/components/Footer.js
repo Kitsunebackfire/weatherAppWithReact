@@ -4,13 +4,29 @@ import "./styling/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer__mainContainer">
-      <div className="footer__designedBy">Designed By K. Ivey</div>
+      <div className="footer__designedBy">
+        Designed By <span className="footer__designer">K. Ivey</span>
+      </div>
       <nav className="footer__nav">
-        <a className="footer__navLink">github</a>
-        <a className="footer__navLink">Portfolio</a>
-        <a className="footer__navLink" href="mailto:kurtIveyCodes@gmail.com">
-          Contact
-        </a>
+        <div className="footer__navLinkContainer">
+          <a
+            className="footer__navLink"
+            href="https://github.com/Kitsunebackfire/weatherAppWithReact"
+          >
+            github
+          </a>
+        </div>
+        <div className="footer__navLinkContainer">
+          <a className="footer__navLink" href="#">
+            Portfolio
+          </a>
+        </div>
+
+        <div className="footer__navLinkContainer">
+          <a className="footer__navLink" href="mailto:kurtIveyCodes@gmail.com">
+            Contact
+          </a>
+        </div>
       </nav>
     </footer>
   );

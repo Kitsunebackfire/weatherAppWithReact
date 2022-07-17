@@ -1,3 +1,5 @@
+// returned object response for manual reference purposes
+
 const mockResponse = {
   coord: {
     lon: -96.7836,
