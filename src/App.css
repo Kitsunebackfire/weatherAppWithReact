@@ -14,3 +14,9 @@ min-width: 360px;
     justify-content: initial;
   }
 }
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

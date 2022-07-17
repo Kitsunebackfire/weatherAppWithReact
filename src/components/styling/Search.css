@@ -6,6 +6,8 @@
     top: 0;
     right: 0;
     margin-top: 1rem;
+    animation: fadeIn 4300ms;
+
 }
 
 .search__inputContainer {
@@ -17,10 +19,7 @@
 }
 
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+
 .search__error {
   display: none;
   animation: fadeIn 1000ms;

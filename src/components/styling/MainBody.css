@@ -1,4 +1,6 @@
 .mainBody__container {
+
+
     font-family: "Spartan", sans-serif;
     border-radius: 15px;
     width: fit-content;
@@ -9,6 +11,8 @@
     margin-bottom: 50%;
     margin-top: 50%;
     width: 380px;
+    animation: fadeIn 4300ms;
+
 }
 
 .mainBody__title {

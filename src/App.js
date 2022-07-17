@@ -2,14 +2,13 @@ import "./App.css";
 import MainBody from "./components/MainBody";
 import Search from "./components/Search";
 import React, { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
   const [location, setLocation] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
-
-  const errorDiv = document.querySelector(".search__error");
 
   const resetInput = () => {
     const inputField = document.getElementById("searchCity");
@@ -25,7 +24,6 @@ function App() {
       //console.log(jsonData);
       //return jsonData;
       if (jsonData.cod !== 200) {
-        errorDiv.style.display = "inline";
         setErrorMessage("Please enter a valid City");
         setLocation("");
         console.log("404 error");
@@ -57,6 +55,7 @@ function App() {
         location={location}
       />
       <MainBody weatherData={weatherData} />
+      <Footer />
     </div>
   );
 }

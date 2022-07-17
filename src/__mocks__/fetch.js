@@ -42,5 +42,3 @@ const mockResponse = {
   name: "Dallas",
   cod: 200,
 };
-
-export default mockResponse;
