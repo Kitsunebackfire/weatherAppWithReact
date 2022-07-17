@@ -3,6 +3,7 @@ import MainBody from "./components/MainBody";
 import Search from "./components/Search";
 import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
+import apiKey from "./components/Api";
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
@@ -17,9 +18,7 @@ function App() {
 
   async function getWeather(location = "Fort Worth") {
     try {
-      const retreivedData = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=1e7c32808ec4dc6f51ae92399c20c43b`
-      );
+      const retreivedData = await fetch(apiKey(location));
       const jsonData = await retreivedData.json();
       //console.log(jsonData);
       //return jsonData;
