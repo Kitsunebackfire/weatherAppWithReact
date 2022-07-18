@@ -12,12 +12,16 @@
     padding: 4.2px 3px 3px 3px;
     border-radius: 25px;
     margin-bottom: 10px;
+
+    animation: fadeIn 3700ms;
+
 }
 
 .footer__designedBy {
     position: absolute;
     bottom: 41px;
     color: rgba(255, 255, 255, 0.691);
+    font-size: 1rem;
 }
 
 .footer__designer {
@@ -55,6 +59,7 @@
     color: white;
 }
 .footer__navLink {
+    font-size: 1rem;
     color: inherit;
     text-decoration: none;
 }
@@ -62,5 +67,27 @@
 
 
 @media screen and (max-width: 784px){
-
+    .footer__mainContainer {
+        width: 190px;
+        height: 14px;
+        padding: 3px 2px 2px 2px;
+        margin-bottom: 7px;
+    }
+    .footer__designedBy {
+        position: absolute;
+        bottom: 21px;
+        color: rgba(255, 255, 255, 0.691);
+        font-size: .7rem;
+    }
+    
+    .footer__designer {
+        margin-left: 1px;
+        font-size: .9rem;
+        font-family: 'The Nautigal', cursive;
+    }
+    .footer__navLink {
+        font-size: .7rem;
+        color: inherit;
+        text-decoration: none;
+    }
 }
